@@ -6,3 +6,9 @@ To mitigate potential data loss due to instance failures or errors, EBS volumes 
 
 ## Setup & Steps to execute
 
+1. First create an EC2 Instance with the Target Volume. Navigate to the EC2 dashboard in the AWS console and then launch a new EC2 instance and ensure it has the relevant volume that requires backup.
+
+2. Next to create a Lambda function,  navigate to Lambda console. Click on "Create function". Choose a meaningful name for your Lambda function, specify the runtime as Python 3.9, and create a new role.
+
+3. Download Lambda function into AWS Cloud9 environment.In your Cloud9 environment, create two essential files: template.yaml and event.json. These files are integral for locally testing the Lambda function. 
+
